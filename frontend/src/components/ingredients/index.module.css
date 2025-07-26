@@ -1,0 +1,63 @@
+@keyframes scaleFull {
+    0% {
+        opacity: 0;
+        transform: translateY(2rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0rem);
+    }
+}
+
+.card {
+    max-width: 60rem;
+    width: 85vw;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    opacity: 0;
+    transform: translateY(2rem);
+    animation: scaleFull forwards 1s;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+.desc {
+    margin-bottom: 1.5rem;
+    text-align: center;
+    opacity: 0.7;
+}
+
+.select {
+    width: 50%;
+    min-width: 25rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    z-index: 5;
+}
+
+.button {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+@media (max-width:585px) {
+    .select {
+        width: 100%;
+        min-width: unset;
+    }
+
+    .card {
+        margin-top: -1rem;
+        margin-bottom: 1rem;
+    }
+}

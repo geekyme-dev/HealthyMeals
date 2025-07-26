@@ -1,0 +1,132 @@
+.card {
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 50rem;
+    width: 90vw;
+}
+
+.name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1.3rem;
+}
+
+.icon {
+    height: 1.2rem;
+    width: 1.2rem;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    opacity: 0.5;
+    margin-top: 0.5rem;
+}
+
+.item > span:nth-of-type(1) {
+    font-weight: bold;
+}
+
+.imgWrap {
+    overflow: hidden;
+    border-radius: 1rem 0 0 1rem;
+    width: 50%;
+    min-width: 50%;
+    position: relative;
+}
+
+.imgWrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.headDetails {
+    display: flex;
+    gap: 1rem;
+}
+
+.imgWrap::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background: #37b74a;
+    width: 1rem;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.video {
+    width: 100%;
+    margin-top: 1rem;
+    aspect-ratio: 1.7;
+    border-radius: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.originalBtn {
+    width: fit-content;
+    margin-top: 1rem;
+}
+
+.btnIng {
+    border: 2px solid #37b74a;
+    padding: 0.2rem 0.5rem;
+    border-radius: 1rem;
+    color: rgba(0, 0, 0, 0.512);
+    width: fit-content;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+.ingredients {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1.2rem;
+}
+
+@media (max-width: 885px) {
+    .card {
+        padding: 0.75rem;
+        width: calc(90vw - 0.75rem);
+    }
+
+    .headDetails {
+        flex-direction: column;
+    }
+
+    .imgWrap {
+        border-radius: 1rem 1rem 0 0;
+        width: 100%;
+        height: 13rem;
+    }
+
+    .imgWrap::before {
+        width: 100%;
+        height: 1rem;
+        top: unset;
+        bottom: 0;
+        left: 0;
+    }
+
+    .originalBtn {
+        width: unset;
+        text-align: center;
+    }
+}
+
+.heading {
+    font-size: 2rem;
+    font-weight: bold;
+}
